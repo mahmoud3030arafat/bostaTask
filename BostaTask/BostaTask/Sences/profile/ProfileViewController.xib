@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="BostaTask" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="0hl-nC-VXR" id="Vm8-uf-0ZC"/>
+                <outlet property="userAddress" destination="hRa-NQ-0eU" id="wHd-Iw-RvE"/>
+                <outlet property="userName" destination="JYO-xD-fuk" id="VzU-uZ-aWK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH9-Zw-fYP">
+                    <rect key="frame" x="8" y="59" width="91" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new cairo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-NQ-0eU">
+                    <rect key="frame" x="8" y="138.33333333333334" width="74" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mahmoud Aaraft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYO-xD-fuk">
+                    <rect key="frame" x="8.0000000000000071" y="111" width="126.66666666666669" height="19.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-nC-VXR">
+                    <rect key="frame" x="4" y="188.33333333333334" width="367" height="444.66666666666663"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-Qf-4L5">
+                    <rect key="frame" x="8" y="166.66666666666666" width="82.666666666666671" height="21.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JYO-xD-fuk" firstAttribute="leading" secondItem="tH9-Zw-fYP" secondAttribute="leading" id="23O-xL-NL2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0hl-nC-VXR" secondAttribute="bottom" id="4Zi-m0-r3g"/>
+                <constraint firstItem="0hl-nC-VXR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="4kV-5b-RCM"/>
+                <constraint firstItem="hRa-NQ-0eU" firstAttribute="top" secondItem="JYO-xD-fuk" secondAttribute="bottom" constant="8" id="EMy-tg-CQb"/>
+                <constraint firstItem="3s9-Qf-4L5" firstAttribute="top" secondItem="hRa-NQ-0eU" secondAttribute="bottom" constant="8" id="IRW-fC-Vxb"/>
+                <constraint firstItem="hRa-NQ-0eU" firstAttribute="leading" secondItem="JYO-xD-fuk" secondAttribute="leading" id="RqJ-4D-1Yn"/>
+                <constraint firstItem="tH9-Zw-fYP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Y2X-R5-jP9"/>
+                <constraint firstItem="0hl-nC-VXR" firstAttribute="top" secondItem="3s9-Qf-4L5" secondAttribute="bottom" id="kWF-nj-asz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0hl-nC-VXR" secondAttribute="trailing" constant="4" id="nmg-Bu-iU0"/>
+                <constraint firstItem="3s9-Qf-4L5" firstAttribute="leading" secondItem="tH9-Zw-fYP" secondAttribute="leading" id="vKx-uX-JO1"/>
+                <constraint firstItem="tH9-Zw-fYP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xTB-VQ-Lea"/>
+                <constraint firstItem="JYO-xD-fuk" firstAttribute="top" secondItem="tH9-Zw-fYP" secondAttribute="bottom" constant="16" id="yJE-e7-APf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1048" y="-57"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
